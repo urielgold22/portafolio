@@ -3,83 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Víctor Valencia Rico - Desarrollador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
-<body>
-    <header>
-        <div class="container">
-            <h1>Mi Portafolio</h1>
-            <p>Desarrollador Web</p>
-            <button id="theme-toggle">🌓</button>
+<body class="bg-gray-900 text-white">
+    <!-- Navegación (mismo código anterior) -->
+    <nav class="fixed w-full z-20 top-0 left-0 bg-black/50 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">NINJAVA</span>
+            </a>
+            <div class="items-center justify-between w-full md:flex md:w-auto">
+                <ul class="flex flex-col md:flex-row md:space-x-8">
+                    <li><a href="#inicio" class="block py-2 hover:text-blue-500">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="block py-2 hover:text-blue-500">Sobre Mí</a></li>
+                    <li><a href="#servicios" class="block py-2 hover:text-blue-500">Servicios</a></li>
+                    <li><a href="#portafolio" class="block py-2 hover:text-blue-500">Portafolio</a></li>
+                    <li><a href="#contacto" class="block py-2 hover:text-blue-500">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section id="profile">
-            <div class="profile-container">
-                <img id="profile-image" class="profile-image" src="Imagen de WhatsApp 2025-03-18 a las 16.58.47_0cf190e9.jpg" alt="Mi foto de perfil">
-                <div class="profile-info">
-                    <h1 id="name">Jonathan Uriel Quintas Anguiano</h1>
-                    <p id="bio">Frontend Developer especializado en crear experiencias web modernas y responsivas utilizando React, JavaScript y las últimas tecnologías web.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/tu-usuario" target="_blank" class="social-btn" id="github-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                            </svg>
-                            GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="social-btn" id="linkedin-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                            LinkedIn
+    <!-- Sección de Inicio (mismo código anterior) -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('data-5606639_1280.jpg')"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl font-bold mb-4">HOLA!</h1>
+            <h2 class="text-6xl font-extrabold mb-4">SOY JONATHAN URIEL QUINTAS</h2>
+            <p class="text-3xl mb-6"> Desarrollador Java Full-Stack y Ingeniero  Mecanico Industrial </p>
+            <a href="#portafolio" class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition">
+                Portafolio
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Sobre Mí</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mr-12">
+                    <img src="Imagen de WhatsApp 2025-03-18 a las 16.58.47_0cf190e9.jpg" alt="Jonathan Uriel Quintas Anguiano" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-4">
+                        Soy un desarrollador apasionado por la tecnología y la programación. 
+                        Con años de experiencia en el desarrollo de software, me especializo 
+                        en crear soluciones innovadoras y eficientes.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Mi objetivo es transformar ideas complejas en aplicaciones 
+                        funcionales y elegantes que resuelvan problemas reales.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+                            Descargar CV
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="projects">
-            <h2>Mis Proyectos</h2>
-            <div id="projects-loading" class="loading">
-                <div class="spinner"></div>
-                <p>Cargando proyectos...</p>
-            </div>
-            <div id="projects-container" class="projects-container hidden">
-                <!-- Los proyectos se cargarán aquí con JavaScript -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="contact-name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="contact-email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="contact-message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> - Tu Nombre. Todos los derechos reservados.</p>
         </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Mis Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <i class="fas fa-code text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Desarrollo Web</h3>
+                    <p>Creación de sitios web responsivos y modernos utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <i class="fas fa-mobile-alt text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Desarrollo Móvil</h3>
+                    <p>Aplicaciones móviles nativas e híbridas para iOS y Android.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <i class="fas fa-database text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Desarrollo Backend</h3>
+                    <p>Soluciones de backend robustas y escalables con las mejores prácticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Portafolio</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="proyecto1.jpg" alt="Proyecto 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Proyecto 1</h3>
+                        <p class="mb-4">Descripción breve del proyecto.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="proyecto2.jpg" alt="Proyecto 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Proyecto 2</h3>
+                        <p class="mb-4">Descripción breve del proyecto.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="proyecto3.jpg" alt="Proyecto 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Proyecto 3</h3>
+                        <p class="mb-4">Descripción breve del proyecto.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contacto</h2>
+            <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg">
+                <form>
+                    <div class="mb-4">
+                        <label class="block mb-2">Nombre</label>
+                        <input type="text" class="w-full bg-gray-700 rounded p-2" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Email</label>
+                        <input type="email" class="w-full bg-gray-700 rounded p-2" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Mensaje</label>
+                        <textarea class="w-full bg-gray-700 rounded p-2" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-6 text-center">
+        <p>&copy; 2025 Víctor Valencia Rico. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
